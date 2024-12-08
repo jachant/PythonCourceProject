@@ -1,6 +1,8 @@
 """
 https://leetcode.com/problems/letter-combinations-of-a-phone-number/?envType=problem-list-v2&envId=string&envType=problem-list-v2&envId=string
 """
+
+
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         combines = {
@@ -11,7 +13,7 @@ class Solution:
             "6": "mno",
             "7": "pqrs",
             "8": "tuv",
-            "9": "wxyz"
+            "9": "wxyz",
         }
 
         ans = []
@@ -22,5 +24,5 @@ class Solution:
                 for _ in range(len(ans)):
                     f = ans.pop(0)
                     for i in combines[number]:
-                        ans.append(f+i)
+                        ans.append(f + i)
         return ans

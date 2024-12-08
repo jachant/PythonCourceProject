@@ -10,7 +10,7 @@ class Solution:
         ans = ""
         k = len(s)
         for i in range(0, k):
-            for j in range(i + 1, k+1):
+            for j in range(i + 1, k + 1):
 
                 newStr = s[i:j]
 
